@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body {
+    font-family: 'Lora', serif;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+
+.site-ttl {
+    font-size: 30px;
+    position: absolute;
+    margin-left: 30px;
+    top: 45%;
+}
+.site-ttl a{
+    color: #fff;
+}
+
+.sec-ttl {
+    width: 100%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    margin-top: 120px;
+}
+
+.item-ttl {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 70px;
+    border-bottom: double 4px #eea16d;
+}
+
+.fixed-bg {
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 90px 16px 150px 16px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/girl-2436545_640.jpg );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+.nav li{
+    margin-left: 40px;
+}
+.nav li a{
+    color: #fff;
+    font-size: 15px;
+}
+
+#type {
+    margin-top: 20px;
+}
+.type-img {
+    background-image: url(../img/christina-deravedisian-NqX3xXNbd5I-unsplash.jpg);
+    position: relative;
+}
+
+.type-content {
+    display: flex;
+}
+.type-item {
+    width: 50%;
+    padding: 0 45px;
+}
+.typoe-item:first-child {
+    border-right: solid 1px #fff;
+}
+.type-item dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+.type-item dt {
+    width: 87%;
+    text-align: left;
+    border-bottom: dotted 1px #fff;
+    margin-bottom: 25px;
+}
+.type-item dd {
+    width: 13%;
+    text-align: right;
+    padding-top: 8px;
+}
+.type-item dl.dride {
+    margin-bottom: 55px;
+}
+
+
+#about {
+    margin-top: 20px;
+}
+.about-img {
+    background-image: url(../img/carrie-beth-williams-TtKZyFJ7XC0-unsplash.jpg);
+    position: relative;
+}
+.about-content ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.about-content li{
+    width: 50%;
+    line-height: 2;
+    text-align: left;
+    padding: 20px;
+}
+.about-btn {
+    width: 150px;
+    height: 50px;
+    padding-top: 30px;
+    display: inline-block;
+    background-color: #eea16d;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.about-btn span {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.about-btn:hover{
+    background-color: #fff;
+    color: #eea16d;
+    transition: all 0.3s ease;
+}
+
+#location {
+    margin-top: 20px;
+}
+.location-img {
+    background-image: url(../img/roman-kraft-_oH66az_yug-unsplash.jpg);
+    position: relative;
+}
+.item-map {
+    filter: grayscale(1);
+    margin-bottom: 20px;
+}
+.item-map iframe{
+    width: 100%;
+    height: 400px;
+}
+.item-form{
+    text-align: left;
+}
+
+.footer {
+    height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .site-title {
+    top: 42%;
+    }
+    .sec-title {
+    font-size: 2rem;
+    top: 26%;
+    }
+    .item-title {
+    font-size: 1.25rem;
+    margin-bottom :25px;
+    }
+    .fixed-bg {
+    height: 94px;
+    background-attachment: scroll;
+    }
+    .wrapper {
+    padding: 30px 16px 60px 16px;
+    }
+
+
+    .type {
+    margin-top: 10px;
+    }
+    .type-content {
+    flex-direction: column;
+    }
+    .type-item {
+    width: 100%;
+    padding: 0;
+    }
+    .type-item:first-child {
+    border-right: none;
+    }
+    .type-item dl {
+    margin-bottom: 10px;
+    }
+    .type-item dl.food {
+    margin-bottom: 10px;
+    }
+
+    .about ul {
+    flex-direction: column;
+    }
+    .about li {
+    width: 100%;
+    }
+}
+
